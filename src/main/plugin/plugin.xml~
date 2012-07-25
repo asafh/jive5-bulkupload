@@ -1,0 +1,53 @@
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://www.jivesoftware.com/schemas/clearspace/2_5/plugin.xsd">
+    <name>bulkupload</name>
+    <description>This plugins allows uploading bulks of documents
+    Version 2.0.4:
+    	Minor changes in settings page. 
+    Version 2.0.3:
+    	Minor bug fixes in placepicker. 
+    Version 2.0.2:
+    	First version to support Jive 5
+	</description>
+    <author>Asaf Haddad</author>
+    <version>2.0.3</version>
+    <minServerVersion>5.0.0</minServerVersion>
+    <maxServerVersion>5.1.0</maxServerVersion>
+    
+    <date>26st February, 2012</date>
+    <components>
+       <component id="profile-actions-self"> 
+           <tab id="profile-actions-self-tab"> 
+               <item id="profile-actions-self-bulk-upload" name="Bulk Uploader"  role="systemAdmin userAdmin communityAdmin" cssClass="jive-icon-med jive-icon-document-upload"
+                   description="Document bulk uploader"> 
+                   <url>bulk-upload!inputLocation.jspa</url>
+               </item> 
+           </tab> 
+       </component>
+       <component id="profile-actions"> 
+           <tab id="profile-actions-tab"> 
+               <item id="profile-actions-bulk-upload" name="Bulk Uploader"  role="systemAdmin userAdmin communityAdmin" cssClass="jive-icon-med jive-icon-document-upload"
+                   description="Document bulk uploader"> 
+                   <url>bulk-upload!inputLocation.jspa</url>
+               </item> 
+           </tab> 
+       </component>
+       <component id="profile-overview-content"> 
+           <tab id="profile-overview-content-tab"> 
+               <item id="profile-overview-content-bulk-upload" name="Bulk Uploader"  role="systemAdmin userAdmin communityAdmin" cssClass="jive-icon-med jive-icon-document-upload"
+                   description="Document bulk uploader"> 
+                   <url>bulk-upload!inputLocation.jspa</url>
+               </item> 
+           </tab> 
+       </component>
+       <component id="user-bar"> 
+           <tab id="jiveUserMenu3" name="userbar.menu.toolbox.tab"> 
+               <item id="user-bar-bulk-upload" name="Bulk Uploader" role="systemAdmin userAdmin communityAdmin" cssClass="jive-icon-med jive-icon-document-upload"
+                   description="Document bulk uploader"> 
+                   <url>bulk-upload!inputLocation.jspa</url>
+               </item> 
+           </tab> 
+       </component>
+	</components>
+
+</plugin>
